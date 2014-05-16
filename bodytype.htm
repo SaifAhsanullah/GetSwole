@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Body Type and BMI</title>
+
+<link href="style1.css" rel="stylesheet" type="text/css" />
+
+<base target="doc"/>
+<script type="text/javascript">
+function calculateBmi() {
+var weight = document.bmiCalc.weight.value
+var height = document.bmiCalc.height.value
+if(weight > 0 && height > 0){	
+var finalBmi = ((weight/(height*height))*703)
+document.bmiCalc.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiCalc.meaning.value = "Too skinny!"
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiCalc.meaning.value = "Just right!"
+}
+if(finalBmi > 25){
+document.bmiCalc.meaning.value = "Overweight!"
+}
+}
+else{
+alert("Can't be negative. Dream on!")
+}
+}<!--Saif's written code-->
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<div id="content">
+<div id="bmi">
+	<p><img src="bodytypes.png" alt="body types" style="float:left"/><p>
+
+	<ul>
+		<ul><b>Ectomorph</b>
+			<li>thin framed</li>
+			<li>difficulty gaining weight</li>
+			<li>flat chest/small shoulders</li>
+			<li>fast metabolism</li>
+		</ul>
+		<ul><b>Mesomorph</b>
+			<li>athletic</li>
+			<li>gains muscle easily</li>
+			<li>gains fat and muscle fairly easily</li>
+			<li>well defined muscles</li>
+		</ul>
+		<ul><b>Endomorph</b>
+			<li>soft and round body</li>
+			<li>round physique</li>
+			<li>find losing fat difficult</li>
+			<li>slow metabolism</li>
+		</ul>
+	</ul>
+</div>
+<h2>BMI Calculator</h2>
+<form id ="bmiCalc" name="bmiCalc">
+Your Weight (lb's): <input type="text" id="weight" name="weight" size="5"><br />
+Your Height (inches only): <input type="text" id="height" name="height" size="5"><br />
+BMI: <input type="text" id="bmi" name="bmi" size="5"><br />
+You Are: <input type="text" id="meaning" name="meaning" size="25"><br />
+<input type="button" value="Calculate BMI" onClick="calculateBmi()">
+<input type="reset" value="Reset" />
+</form>
+
+<p>Click pic if you want to lose fat and get ripped<br/>
+<a href="losediet.htm"><img src="rippedGuy.jpg" alt="ripped" style="height:150px;width:150px;"/></a>
+</p>
+
+<p>
+Click pic if you want to gain muscle and get big<br/>
+<a href="gaindiet.htm"><img src="swoleGuy.jpg" alt="big" style="height:150px;width:150px;"/></a>
+<p>
+</div>
+
+<div id="footer">
+	<address>Copyright Saif A. <a href="about.htm">about</a></address>
+</div>
+</div>
+</body>
+</html>

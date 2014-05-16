@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>About</title>
+<link href="style1.css" rel="stylesheet" type="text/css" />
+<link href="form.css" rel="stylesheet" type="text/css" />
+<base target="doc"/>
+
+</head>
+
+<body>
+<div id="wrapper">
+<h1>Let us know what you think</h1>
+
+<table class="formtable">
+<tr>
+<td>
+<form name="user_exp" id="user_exp" action="mailto:saif514@sbcglobal.net" method="post" enctype="text/plain">
+	<fieldset id="name">
+		<legend>Information</legend>
+		First Name
+		<input type="text" id="firstname" name="firstname"  />
+		Last Name
+		<input type="text" id="lastname" name="lastname" />
+		Zip
+		<input type="text" id="zip" name="zip" style="width:7em" />
+	</fieldset>
+	<fieldset id="firstonsite">
+		<legend>First time on site</legend>
+		<label for="yes">Yes</label>
+		<input type="radio" name="buttons" id="yes" value="yesbutton" />
+		<label for="no">No</label>
+		<input type="radio" name="buttons" id="no" value="nobutton" />
+	</fieldset>
+	<fieldset id="ratings">
+		<label for="content">Was the site informative?</label>
+		<select name="content" id="content">
+			<option value="yesoption">Yes</option>
+			<option value="nooption">No</option>
+		</select>
+		<label for="return">Will you be returning?</label>
+		<select name="return" id="return">
+			<option value="yesoption">Yes</option>
+			<option value="nooption">No</option>
+		</select>
+		<label for="refer">Will you tell your friends about us?</label>
+		<select name="refer" id="refer">
+			<option value="yesoption">Yes</option>
+			<option value="nooption">No</option>
+		</select>
+	</fieldset>
+	<fieldset id="tellus">
+		<label for="tellbox">Tell us whatever you want! We're listening....</label>
+		<textarea id="tellbox" name="tellbox" rows="6" cols="50"></textarea>
+	</fieldset>
+	<fieldset id="checkbox">
+		<label>
+			<input type="checkbox" id="contactus" name="contacus" />
+			You guys can contact me
+		</label>
+	</fieldset>
+	<fieldset id="submission">
+		<input type="submit" value="Submit" />
+		<input type="reset" value="cancel" />
+	</fieldset>
+</form>
+</td></tr>
+</table>
+<h3>Contact Us:</h3>
+<p style="margin-left:4px"><a href="mailto:saif514@sbcglobal.net">Saif514@sbcglobal.net</a><br/>
+8114 N Keating<br/>
+Skokie, IL 60076</p>
+</div>
+</body>
+</html>

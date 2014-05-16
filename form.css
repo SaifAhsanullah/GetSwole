@@ -1,0 +1,7 @@
+.formtable legend	{font-size:24px;color:rgb(165,16,16)}
+.formtable  label		{display:block; position:relative}
+.formtable #submission	{text-align:center; border-style:none;}
+.formtable #tellus label	{font-size:24px;color:rgb(165,16,16);}
+.formtable #checkbox label  {font-size:24px;color:rgb(165,16,16);}
+.formtable #ratings label	{font-siez:24px;color:rgb(165,16,16);}
+.formtable #firstonsite label	{display:inline;}
